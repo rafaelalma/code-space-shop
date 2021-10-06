@@ -1,0 +1,84 @@
+:root {
+    --purple-light: #7e3af2;
+    --purple-dark: #6c2bd9;
+
+    --orange-light: #feecdc;
+    --orange-dark: #ff5a1f;
+
+    --blue-light: #e1effe;
+    --blue-dark: #3f83f8;
+
+    --green-light: #def7ec;
+    --green-dark: #0e9f6e;
+
+    --teal-light: #d5f5f6;
+    --teal-dark: #0694a2;
+
+    --red-light: #fde8e8;
+    --red-dark: #e02424;
+
+    --gray-light: #f4f5f7;
+    --gray-dark: #24262d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, system-ui, Roboto, Helvetica, Arial;
+    font-size: 16px;
+}
+
+/* Login */
+img {
+    height: 150px;
+    width: 100%;
+}
+
+label,
+input,
+button,
+a {
+    display: block;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-wrapper {
+    width: 100%;
+    padding: 2em;
+}
+
+.login-form {
+    margin: 1em 0;
+}
+
+.form-row {
+    margin-bottom: 1em;
+}
+
+.form-row input[type="email"],
+.form-row input[type="password"],
+.login-form input[type="submit"] {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.5em;
+    border: 2px solid var(--gray-light);
+}
+
+.form-row label {
+    margin-bottom: 0.2em;
+}
+
+.login-form input[type="submit"] {
+    color: white;
+    background-color: var(--purple-dark);
+    border: none;
+}
