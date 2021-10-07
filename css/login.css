@@ -1,0 +1,99 @@
+label,
+input,
+button,
+a {
+    display: block;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+.background-img,
+.login-wrapper {
+    width: 100%;
+    max-width: 768px;
+}
+
+.background-img {
+    height: 150px;
+    background-image: url(../images/desktop-large.jpg);
+    background-size: cover;
+    border-radius: var(--border-radius);
+}
+
+.login-wrapper {
+    padding: 2em;
+}
+
+.login-form {
+    margin: 1em 0;
+}
+
+.form-row,
+.social-btn {
+    margin-bottom: 1em;
+}
+
+.form-row input[type="email"],
+.form-row input[type="password"],
+.login-form input[type="submit"],
+.social-btn {
+    width: 100%;
+    border-radius: var(--border-radius);
+    padding: 0.8em 0.5em;
+    border: 2px solid var(--gray-light);
+
+    font-size: 1em;
+}
+
+.form-row label {
+    margin-bottom: 0.2em;
+}
+
+.login-form input[type="submit"] {
+    background-color: var(--purple-dark);
+    color: white;
+    border: none;
+}
+
+.login-form input[type="submit"],
+.social-btn {
+    font-weight: bold;
+}
+
+hr {
+    color: var(--gray-light);
+    margin: 2em 0;
+}
+
+.social-btn {
+    background-color: white;
+    color: var(--gray-dark);
+}
+
+.link {
+    text-decoration: none;
+    margin-top: 1em;
+    font-weight: bold;
+    color: var(--purple-light);
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .background-img {
+        height: 100vh;
+        max-width: initial;
+    }
+}
