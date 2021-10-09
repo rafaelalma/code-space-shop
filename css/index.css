@@ -16,16 +16,46 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.search-wrapper {
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.search {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: var(--border-radius-1);
+    background-color: var(--gray-light);
+}
+
+.notifications {
+    display: flex;
+    align-items: center;
+}
+
+.main-avatar {
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/avatars/avatar-10.jpeg);
+    background-size: cover;
+    border-radius: 50%;
 }
 
 .dashboard-wrapper {
     padding: 1em;
     background-color: var(--gray-light);
+
+    box-shadow: 5px 5px 10px var(--gray-dark);
 }
 
 .dashboard {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .title {
@@ -36,7 +66,7 @@
     padding: 1em;
     margin: 1em 0;
     background-color: var(--purple-dark);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-1);
     color: white;
 
     display: flex;
@@ -55,7 +85,7 @@
 .card-item {
     margin: 1em 0;
     padding: 1em;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-1);
     background-color: white;
 
     display: flex;
@@ -107,10 +137,14 @@
     padding: 1em;
 }
 
+.avatar {
+    display:none;
+}
+
 .status {
     padding: 0.5em;
     background-color: var(--gray-light);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-1);
     font-weight: bold;
 }
 
@@ -120,8 +154,8 @@
 }
 
 .status.fail {
-    color: var(--orange-dark);
-    background-color: var(--orange-light);
+    color: var(--red-dark);
+    background-color: var(--red-light);
 }
 
 .pagination {
@@ -145,12 +179,58 @@
 
 .pages-wrapper .page.active {
     background-color: var(--purple-dark);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-1);
     color: white;
 }
 
+/* Icons */
+.fa-bell,
+.fa-bars {
+    color: var(--purple-dark);
+}
+
+.fa-bell {
+    margin-right: 1em;
+}
+
+.fa-star {
+    margin-right: 0.5em;
+}
+
+.fa-arrow-right {
+    margin-left: 0.5em;
+}
+
+.fa-users,
+.fa-money-bill-wave,
+.fa-shopping-cart,
+.fa-comment-dots {
+    padding: 1em;
+    border-radius: 50%;
+}
+
+.fa-users {
+    color: var(--orange-dark);
+    background-color: var(--orange-light);
+}
+
+.fa-money-bill-wave {
+    color: var(--green-dark);
+    background-color: var(--green-light);
+}
+
+.fa-shopping-cart {
+    color: var(--blue-dark);
+    background-color: var(--blue-light);
+}
+
+.fa-comment-dots {
+    color: var(--teal-dark);
+    background-color: var(--teal-light);
+}
+
 /* Tablet Styles */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 950px) {
     .card {
         width: 50%;
     }
@@ -174,7 +254,7 @@
 
     .side-bar {
         display: block;
-        width: 200px;
+        width: 300px;
         flex-shrink: 0;
 
         padding: 1em;
@@ -207,17 +287,78 @@
         color: white;
         font-size: 1em;
         border: none;
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius-1);
         margin-top: 1em;
 
         display: flex;
         justify-content: space-between;
     }
+
+    .side-bar .fas {
+        color: var(--gray-dark);
+        margin-right: 1em;
+    }
+
+    .fas.fa-plus {
+        color: white;
+        margin-right: 0.5em;
+    }
+
+    .fa-bars {
+        opacity: 0;
+    }
+
+    .client {
+        display: flex;
+        align-items: center;
+    }
+
+    [class^="avatar"] {
+        display: block;
+
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        border-radius: 50%;
+        margin-right: 1em;
+    }
+
+    .avatar-1 {
+        background-image: url(../images/avatars/avatar-1.jpeg);
+    }
+
+    .avatar-2 {
+        background-image: url(../images/avatars/avatar-2.jpeg);
+    }
+
+    .avatar-3 {
+        background-image: url(../images/avatars/avatar-3.jpeg);
+    }
+
+    .avatar-4 {
+        background-image: url(../images/avatars/avatar-4.jpeg);
+    }
+
+    .avatar-5 {
+        background-image: url(../images/avatars/avatar-5.jpeg);
+    }
+
+    .avatar-6 {
+        background-image: url(../images/avatars/avatar-6.jpeg);
+    }
+
+    .avatar-7 {
+        background-image: url(../images/avatars/avatar-7.jpeg);
+    }
+
+    .avatar-8 {
+        background-image: url(../images/avatars/avatar-8.jpeg);
+    }
 }
 
 
 /* Desktop Styles */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1350px) {
     .top-bar {
         justify-content: space-around;
     }

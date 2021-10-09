@@ -20,7 +20,9 @@
     --gray-light: #f4f5f7;
     --gray-dark: #24262d;
 
-    --border-radius: 8px;
+    --border-radius-1: 8px;
+
+    --space-1: 1em;
 }
 
 * {

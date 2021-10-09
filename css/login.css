@@ -21,7 +21,7 @@ body {
     height: 150px;
     background-image: url(../images/desktop-large.jpg);
     background-size: cover;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-1);
 }
 
 .login-wrapper {
@@ -42,7 +42,7 @@ body {
 .login-form input[type="submit"],
 .social-btn {
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius-1);
     padding: 0.8em 0.5em;
     border: 2px solid var(--gray-light);
 
