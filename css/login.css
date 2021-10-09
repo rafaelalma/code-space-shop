@@ -14,7 +14,7 @@ body {
 .background-img,
 .login-wrapper {
     width: 100%;
-    max-width: 768px;
+    max-width: 700px;
 }
 
 .background-img {
@@ -25,16 +25,16 @@ body {
 }
 
 .login-wrapper {
-    padding: 2em;
+    padding: var(--space-6);
 }
 
 .login-form {
-    margin: 1em 0;
+    margin: var(--space-3) 0;
 }
 
 .form-row,
 .social-btn {
-    margin-bottom: 1em;
+    margin-bottom: var(--space-3);
 }
 
 .form-row input[type="email"],
@@ -43,14 +43,14 @@ body {
 .social-btn {
     width: 100%;
     border-radius: var(--border-radius-1);
-    padding: 0.8em 0.5em;
+    padding: var(--space-2) var(--space-1);
     border: 2px solid var(--gray-light);
 
-    font-size: 1em;
+    font-size: var(--space-3);
 }
 
 .form-row label {
-    margin-bottom: 0.2em;
+    margin-bottom: var(--space-0);
 }
 
 .login-form input[type="submit"] {
@@ -66,7 +66,7 @@ body {
 
 hr {
     color: var(--gray-light);
-    margin: 2em 0;
+    margin: var(--space-6) 0;
 }
 
 .social-btn {
@@ -76,9 +76,13 @@ hr {
 
 .link {
     text-decoration: none;
-    margin-top: 1em;
+    margin-top: var(--space-3);
     font-weight: bold;
     color: var(--purple-light);
+}
+
+.fas {
+    margin-right: var(--space-2);
 }
 
 @media only screen and (min-width: 700px) {
@@ -89,7 +93,7 @@ hr {
     }
 
     .background-img {
-        height: 100vh;
-        max-width: initial;
+        height: 600px;
+        max-width: 100%;
     }
 }

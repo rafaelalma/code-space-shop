@@ -20,9 +20,15 @@
     --gray-light: #f4f5f7;
     --gray-dark: #24262d;
 
+    --border-radius-0: 5px;
     --border-radius-1: 8px;
 
-    --space-1: 1em;
+    --space-0: 0.2em;
+    --space-1: 0.5em;
+    --space-2: 0.8em;
+    --space-3: 1em;
+    --space-4: 1.6em;
+    --space-6: 2em;
 }
 
 * {
@@ -38,5 +44,5 @@ body {
 }
 
 h1 {
-    font-size: 1.6em;
+    font-size: var(--space-4);
 }
