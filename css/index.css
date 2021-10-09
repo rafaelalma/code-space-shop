@@ -29,7 +29,7 @@
 }
 
 .title {
-   margin-bottom: 2em;
+   margin-bottom: 1.5em;
 }
 
 .call-to-action {
@@ -67,11 +67,72 @@
     font-weight: bold;
 }
 
-/* Table */
+.table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+.table-head,
+.table-row {
+    border: 1px solid var(--gray-light);
+    background-color: white;
+}
+
+.table-head-1 {
+    width: 35%;
+}
+
+.table-head-2 {
+    width: 25%;
+}
+
+.table-head-3,
+.table-head-4 {
+    width: 20%;
+}
+
+.table-head-1,
+.table-head-2,
+.table-head-3,
+.table-head-4 {
+    padding: 1em;
+    text-align: left;
+}
+
+.table td {
+    padding: 1em;
+}
+
+.status {
+    padding: 0.5em;
+    background-color: var(--gray-light);
+    border-radius: var(--border-radius);
+    font-weight: bold;
+}
+
+.status.success {
+    color: var(--green-dark);
+    background-color: var(--green-light);
+}
+
+.status.fail {
+    color: var(--orange-dark);
+    background-color: var(--orange-light);
+}
+
+.pagination {
+    font-size: 0.8em;
+    padding: 1em;
+}
 
 .pagination-title {
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
 }
 
 .pages-wrapper {
@@ -89,7 +150,7 @@
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 700px) {
     .card {
         width: 50%;
     }
@@ -103,6 +164,10 @@
         justify-content: space-between;
     }
 
+    .pagination-title {
+        margin-bottom: 0;
+    }
+
     .page-wrapper {
         flex-direction: row;
     }
@@ -111,6 +176,13 @@
         display: block;
         width: 200px;
         flex-shrink: 0;
+
+        padding: 1em;
+    }
+
+    .side-bar-title {
+        font-weight: bold;
+        margin: 0 0 1em 1em;
     }
 
     .side-bar li {
@@ -120,12 +192,36 @@
 
     .side-bar a {
         text-decoration: none;
+        color: var(--gray-dark);
+    }
+
+    .side-bar .active {
+        border-left: 3px solid var(--purple-dark);
+        font-weight: bold;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 1em;
+        background-color: var(--purple-dark);
+        color: white;
+        font-size: 1em;
+        border: none;
+        border-radius: var(--border-radius);
+        margin-top: 1em;
+
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1200px) {
+    .top-bar {
+        justify-content: space-around;
+    }
+
     .card {
         width: 25%;
     }

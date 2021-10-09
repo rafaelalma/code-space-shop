@@ -15,7 +15,7 @@
 <body>
     <div class="page-wrapper">
         <nav class="side-bar">
-            <span class="side-bar-title">CodeSpace Shop</span>
+            <div class="side-bar-title">CodeSpace Shop</div>
             <ul>
                 <li class="active"><a href="#">Dashboard</a></li>
                 <li><a href="#">Clients</a></li>
@@ -24,7 +24,10 @@
                 <li><a href="#">Shipping</a></li>
                 <li><a href="#">Statistics</a></li>
             </ul>
-            <button>Add product</button>
+            <button class="btn">
+                <span>Add product</span>
+                <span>+</span>
+            </button>
         </nav>
         <div class="main-content">
             <header class="top-bar">
@@ -96,10 +99,10 @@
                     <table class="table">
                         <thead class="table-head">
                             <tr class="table-row">
-                                <th>CLIENT</th>
-                                <th>AMOUNT</th>
-                                <th>STATUS</th>
-                                <th>DATE</th>
+                                <th class="table-head-1">CLIENT</th>
+                                <th class="table-head-2">AMOUNT</th>
+                                <th class="table-head-3">STATUS</th>
+                                <th class="table-head-4">DATE</th>
                             </tr>
                         </thead>
                         <tbody class="table-body">
@@ -108,8 +111,8 @@
                                     <div class="client">
                                         <!-- avatar-1 -->
                                         <div class="client-content">
-                                            <span class="page">Hans Burger</span>
-                                            <span>10x Developer</span>
+                                            <div><strong>Hans Burger</strong></div>
+                                            <div>10x Developer</div>
                                         </div>
                                     </div>
                                 </td>
@@ -122,8 +125,8 @@
                                     <div class="client">
                                         <!-- avatar-2 -->
                                         <div class="client-content">
-                                            <span>Sarah Curry</span>
-                                            <span>Designer</span>
+                                            <div><strong>Sarah Curry</strong></div>
+                                            <div>Designer</div>
                                         </div>
                                     </div>
                                 </td>
@@ -136,8 +139,8 @@
                                     <div class="client">
                                         <!-- avatar-3 -->
                                         <div class="client-content">
-                                            <span>Rulia Joberts</span>
-                                            <span>Actress</span>
+                                            <div><strong>Rulia Joberts</strong></div>
+                                            <div>Actress</div>
                                         </div>
                                     </div>
                                 </td>
@@ -150,13 +153,13 @@
                                     <div class="client">
                                         <!-- avatar-4 -->
                                         <div class="client-content">
-                                            <span>Wenzel Dashington</span>
-                                            <span>Actor</span>
+                                            <div><strong>Wenzel Dashington</strong></div>
+                                            <div>Actor</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td>$ 863.45</td>
-                                <td><span class="status">Approved</span></td>
+                                <td><span class="status">Expired</span></td>
                                 <td><time datetime="2020-10-6">6/10/2020</time></td>
                             </tr>
                             <tr class="table-row">
@@ -164,13 +167,13 @@
                                     <div class="client">
                                         <!-- avatar-5 -->
                                         <div class="client-content">
-                                            <span>Dave Li</span>
-                                            <span>Influencer</span>
+                                            <div><strong>Dave Li</strong></div>
+                                            <div>Influencer</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td>$ 863.45</td>
-                                <td><span class="success">Approved</span></td>
+                                <td><span class="status success">Approved</span></td>
                                 <td><time datetime="2020-10-6">6/10/2020</time></td>
                             </tr>
                             <tr class="table-row">
@@ -178,13 +181,13 @@
                                     <div class="client">
                                         <!-- avatar-6 -->
                                         <div class="client-content">
-                                            <span>Maria Ramovic</span>
-                                            <span>Runner</span>
+                                            <div><strong>Maria Ramovic</strong></div>
+                                            <div>Runner</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td>$ 863.45</td>
-                                <td><span class="success">Approved</span></td>
+                                <td><span class="status success">Approved</span></td>
                                 <td><time datetime="2020-10-6">6/10/2020</time></td>
                             </tr>
                             <tr class="table-row">
@@ -192,13 +195,13 @@
                                     <div class="client">
                                         <!-- avatar-7 -->
                                         <div class="client-content">
-                                            <span>Hitney Wouston</span>
-                                            <span>Singer</span>
+                                            <div><strong>Hitney Wouston</strong></div>
+                                            <div>Singer</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td>$ 863.45</td>
-                                <td><span class="success">Approved</span></td>
+                                <td><span class="status success">Approved</span></td>
                                 <td><time datetime="2020-10-6">6/10/2020</time></td>
                             </tr>
                             <tr class="table-row">
@@ -206,20 +209,20 @@
                                     <div class="client">
                                         <!-- avatar-8 -->
                                         <div class="client-content">
-                                            <span>Hans Burger</span>
-                                            <span>10x Developer</span>
+                                            <div><strong>Hans Burger</strong></div>
+                                            <div>10x Developer</div>
                                         </div>
                                     </div>
                                 </td>
                                 <td>$ 863.45</td>
-                                <td><span class="success">Approved</span></td>
+                                <td><span class="status success">Approved</span></td>
                                 <td><time datetime="2020-10-6">6/10/2020</time></td>
                             </tr>
                         </tbody>
                     </table>
                     <div class="pagination">
                         <div class="pagination-title">SHOWING 21-30 OF 100</div>
-                        <div class="pages-wrapper">
+                        <nav class="pages-wrapper">
                             <div class="page">&lt;</div>
                             <div class="page">1</div>
                             <div class="page">2</div>
@@ -231,7 +234,7 @@
                             <div class="page">8</div>
                             <div class="page">9</div>
                             <div class="page">&gt;</div>
-                        </div>
+                        </nav>
                     </div>
                 </div>
             </div>
