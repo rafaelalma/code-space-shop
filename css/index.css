@@ -1,0 +1,136 @@
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar {
+    display: none;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+.top-bar {
+    padding: 1em;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard-wrapper {
+    padding: 1em;
+    background-color: var(--gray-light);
+}
+
+.dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+   margin-bottom: 2em;
+}
+
+.call-to-action {
+    padding: 1em;
+    margin: 1em 0;
+    background-color: var(--purple-dark);
+    border-radius: var(--border-radius);
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+}
+
+.card-item {
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: var(--border-radius);
+    background-color: white;
+
+    display: flex;
+    gap: 0.5em;
+}
+
+.card-content .value {
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+/* Table */
+
+.pagination-title {
+    display: flex;
+    align-items: center;
+}
+
+.pages-wrapper {
+    display: flex;
+}
+
+.pages-wrapper .page {
+    padding: 0.5em 0.8em;
+}
+
+.pages-wrapper .page.active {
+    background-color: var(--purple-dark);
+    border-radius: var(--border-radius);
+    color: white;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 500px) {
+    .card {
+        width: 50%;
+    }
+
+    .card-item.medium {
+        margin: 1em 2em 1em 0;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .page-wrapper {
+        flex-direction: row;
+    }
+
+    .side-bar {
+        display: block;
+        width: 200px;
+        flex-shrink: 0;
+    }
+
+    .side-bar li {
+        list-style: none;
+        padding: 1em;
+    }
+
+    .side-bar a {
+        text-decoration: none;
+    }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .card {
+        width: 25%;
+    }
+
+    .card-item.big {
+        margin: 1em 2em 1em 0;
+    }
+}

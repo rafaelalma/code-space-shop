@@ -11,10 +11,6 @@ body {
     align-items: center;
 }
 
-h1 {
-    font-size: 1.6em;
-}
-
 .background-img,
 .login-wrapper {
     width: 100%;
