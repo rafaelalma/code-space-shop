@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSpace Shop</title>
+    <title>Dashboard</title>
 
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,7 +13,206 @@
 </head>
 
 <body>
+    <div class="main-content">
+        <header class="top-bar">
+            <!-- hamburger icon -->
+            <form action="process-search.php" method="post">
+                <label for="search">
+                    <input type="text" name="search" id="search" placeholder="Search for anything">
+                </label>
+            </form>
+            <!-- bell icon -->
+            <!-- avatar image -->
+        </header>
+        <h1 class="title">Dashboard</h1>
+        <div class="call-to-action">
+            <span>See what you've missed!</span>
+            <span>View more</span>
+        </div>
+        <div class="cards-wrapper">
+            <div class="card">
+                <!-- people icon -->
+                <div class="card-content">
+                    <span>Total clients</span>
+                    <span>6389</span>
+                </div>
+            </div>
+            <div class="card">
+                <!-- money icon -->
+                <div class="card-content">
+                    <span>Account balance</span>
+                    <span>$ 46,760.89</span>
+                </div>
+            </div>
+            <div class="card">
+                <!-- shopping cart icon -->
+                <div class="card-content">
+                    <span>New sales</span>
+                    <span>376</span>
+                </div>
+            </div>
+            <div class="card">
+                <!-- speech bubble icon -->
+                <div class="card-content">
+                    <span>Pending contacts</span>
+                    <span>35</span>
+                </div>
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>CLIENT</th>
+                    <th>AMOUNT</th>
+                    <th>STATUS</th>
+                    <th>DATE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-1 -->
+                            <div class="client-content">
+                                <span>Hans Burger</span>
+                                <span>10x Developer</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 863.45</td>
+                    <td><span class="status success">Approved</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-2 -->
+                            <div class="client-content">
+                                <span>Sarah Curry</span>
+                                <span>Designer</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 86.00</td>
+                    <td><span class="status fail">Denied</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-3 -->
+                            <div class="client-content">
+                                <span>Rulia Joberts</span>
+                                <span>Actress</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 1276.45</td>
+                    <td><span class="status success">Approved</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-4 -->
+                            <div class="client-content">
+                                <span>Wenzel Dashington</span>
+                                <span>Actor</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 863.45</td>
+                    <td><span class="status">Approved</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-5 -->
+                            <div class="client-content">
+                                <span>Dave Li</span>
+                                <span>Influencer</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 863.45</td>
+                    <td><span class="success">Approved</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-6 -->
+                            <div class="client-content">
+                                <span>Maria Ramovic</span>
+                                <span>Runner</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 863.45</td>
+                    <td><span class="success">Approved</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-7 -->
+                            <div class="client-content">
+                                <span>Hitney Wouston</span>
+                                <span>Singer</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 863.45</td>
+                    <td><span class="success">Approved</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="client">
+                            <!-- avatar-8 -->
+                            <div class="client-content">
+                                <span>Hans Burger</span>
+                                <span>10x Developer</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td>$ 863.45</td>
+                    <td><span class="success">Approved</span></td>
+                    <td><time datetime="2020-10-6">6/10/2020</time></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <span>SHOWING 21-30 OF 100</span>
+            <div class="pages-wrapper">
+                <span></span>
+                <span>1</span>
+                <span>2</span>
+                <span class="active">3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span></span>
+            </div>
+        </div>
+    </div>
 
+    <nav class="side-bar">
+        <span class="side-bar-title">CodeSpace Shop</span>
+        <ul>
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Statistics</a></li>
+        </ul>
+        <button>Add product</button>
+    </nav>
 </body>
 
 </html>
