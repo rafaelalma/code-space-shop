@@ -27,15 +27,38 @@
 
 .search {
     width: 100%;
-    padding: var(--space-3);
+    padding: var(--space-3) var(--space-3) var(--space-3) 3em;
     border: none;
     border-radius: var(--border-radius-1);
     background-color: var(--gray-light);
 }
 
+.search-label {
+    position: relative;
+}
+
+.fa-search {
+    position: absolute;
+    left: 12px;
+    top: 2px;
+    color: var(--purple-dark);
+}
+
 .notifications {
     display: flex;
     align-items: center;
+
+    position: relative;
+}
+
+.notifications .active-notification {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
 }
 
 .main-avatar {
@@ -73,6 +96,11 @@
     justify-content: space-between;
 }
 
+.call-to-action a {
+    text-decoration: none;
+    color: white;
+}
+
 .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -108,8 +136,12 @@
 
 .table-head,
 .table-row {
-    border: 1px solid var(--gray-light);
+    border: 2px solid var(--gray-light);
     background-color: white;
+}
+
+.table-head .table-row {
+    background-color: var(--gray-light);
 }
 
 .table-head-1 {
@@ -177,7 +209,7 @@
     padding: var(--space-1) var(--space-2);
 }
 
-.pages-wrapper .page.active {
+.pages-wrapper .page.active-page {
     background-color: var(--purple-dark);
     border-radius: var(--border-radius-1);
     color: white;
@@ -229,6 +261,10 @@
     background-color: var(--teal-light);
 }
 
+.interactable {
+    cursor: pointer;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 950px) {
     .card {
@@ -275,7 +311,7 @@
         color: var(--gray-dark);
     }
 
-    .side-bar .active {
+    .side-bar .active-section {
         border-left: 3px solid var(--purple-dark);
         font-weight: bold;
     }

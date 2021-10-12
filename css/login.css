@@ -5,6 +5,11 @@ a {
     display: block;
 }
 
+hr {
+    color: var(--gray-light);
+    margin: var(--space-6) 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -62,11 +67,7 @@ body {
 .login-form input[type="submit"],
 .social-btn {
     font-weight: bold;
-}
-
-hr {
-    color: var(--gray-light);
-    margin: var(--space-6) 0;
+    cursor: pointer;
 }
 
 .social-btn {

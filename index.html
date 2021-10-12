@@ -20,7 +20,7 @@
         <nav class="side-bar">
             <div class="side-bar-title"><i class="fas fa-rocket"></i>CodeSpace Shop</div>
             <ul>
-                <li class="active"><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
+                <li class="active-section"><a href="#"><i class="fas fa-home"></i>Dashboard</a></li>
                 <li><a href="#"><i class="fas fa-user-friends"></i>Clients</a></li>
                 <li><a href="#"><i class="fas fa-box-open"></i>Products</a></li>
                 <li><a href="#"><i class="fas fa-file-alt"></i>Sales</a></li>
@@ -29,20 +29,22 @@
             </ul>
             <button class="btn">
                 <span>Add product</span>
-                <span><i class="fas fa-plus"></i></span>
+                <span><i class="fas fa-plus interactable"></i></span>
             </button>
         </nav>
         <div class="main-content">
             <header class="top-bar">
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars interactable"></i>
                 <form class="search-wrapper" action="process-search.php" method="post">
-                    <label for="search">
+                    <label for="search" class="search-label">
+                        <i class="fas fa-search"></i>
                         <input class="search" type="text" name="search" id="search" placeholder="Search for anything">
                     </label>
                 </form>
                 <div class="notifications">
-                    <i class="fas fa-bell"></i>
-                    <a href="#">
+                    <i class="fas fa-bell interactable"></i>
+                    <div class="active-notification"></div>
+                    <a href="pages/login.html">
                         <div class="main-avatar"></div>
                     </a>
                 </div>
@@ -54,7 +56,9 @@
                     </div>
                     <div class="call-to-action">
                         <div><i class="fas fa-star"></i>See what you've missed!</div>
-                        <div>View more<i class="fas fa-arrow-right"></i></div>
+                        <a href="#">
+                            <div>View more<i class="fas fa-arrow-right"></i></div>
+                        </a>
                     </div>
                     <div class="cards-wrapper">
                         <div class="card">
@@ -221,17 +225,17 @@
                     <div class="pagination">
                         <div class="pagination-title">SHOWING 21-30 OF 100</div>
                         <nav class="pages-wrapper">
-                            <div class="page"><i class="fas fa-angle-left"></i></div>
-                            <div class="page">1</div>
-                            <div class="page">2</div>
-                            <div class="page active">3</div>
-                            <div class="page">4</div>
-                            <div class="page">5</div>
-                            <div class="page">6</div>
-                            <div class="page">7</div>
-                            <div class="page">8</div>
-                            <div class="page">9</div>
-                            <div class="page"><i class="fas fa-angle-right"></i></div>
+                            <div class="page interactable"><i class="fas fa-angle-left"></i></div>
+                            <div class="page interactable">1</div>
+                            <div class="page interactable">2</div>
+                            <div class="page interactable active-page">3</div>
+                            <div class="page interactable">4</div>
+                            <div class="page interactable">5</div>
+                            <div class="page interactable">6</div>
+                            <div class="page interactable">7</div>
+                            <div class="page interactable">8</div>
+                            <div class="page interactable">9</div>
+                            <div class="page interactable"><i class="fas fa-angle-right"></i></div>
                         </nav>
                     </div>
                 </div>
