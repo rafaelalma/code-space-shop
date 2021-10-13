@@ -1,5 +1,53 @@
 .side-bar {
     display: none;
+    width: 300px;
+    flex-shrink: 0;
+
+    padding: var(--space-3);
+}
+
+.side-bar-title {
+    font-weight: bold;
+    margin: 0 0 var(--space-3) var(--space-3);
+}
+
+.side-bar li {
+    list-style: none;
+    padding: var(--space-3);
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+.side-bar .active-section {
+    border-left: 3px inset var(--purple-dark);
+    font-weight: bold;
+}
+
+.btn {
+    width: 100%;
+    padding: var(--space-3);
+    background-color: var(--purple-dark);
+    color: white;
+    font-size: var(--space-3);
+    border: none;
+    border-radius: var(--border-radius-1);
+    margin-top: var(--space-3);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.side-bar .fas {
+    color: var(--gray-dark);
+    margin-right: var(--space-3);
+}
+
+.fas.fa-plus {
+    color: white;
+    margin-right: var(--space-1);
 }
 
 .main-content{
@@ -47,8 +95,8 @@
 }
 
 .notifications .active-notification {
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background-color: red;
     border-radius: 50%;
     position: absolute;
@@ -261,6 +309,53 @@
     cursor: pointer;
 }
 
+[class^="avatar"] {
+    display: none;
+
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: var(--space-3);
+}
+
+.avatar-1 {
+    background-image: url(../images/avatars/avatar-1.jpeg);
+}
+
+.avatar-2 {
+    background-image: url(../images/avatars/avatar-2.jpeg);
+}
+
+.avatar-3 {
+    background-image: url(../images/avatars/avatar-3.jpeg);
+}
+
+.avatar-4 {
+    background-image: url(../images/avatars/avatar-4.jpeg);
+}
+
+.avatar-5 {
+    background-image: url(../images/avatars/avatar-5.jpeg);
+}
+
+.avatar-6 {
+    background-image: url(../images/avatars/avatar-6.jpeg);
+}
+
+.avatar-7 {
+    background-image: url(../images/avatars/avatar-7.jpeg);
+}
+
+.avatar-8 {
+    background-image: url(../images/avatars/avatar-8.jpeg);
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
 /* Tablet Styles */
 @media only screen and (min-width: 950px) {
     .card {
@@ -287,108 +382,16 @@
 
     .side-bar {
         display: block;
-        width: 300px;
-        flex-shrink: 0;
-
-        padding: var(--space-3);
-    }
-
-    .side-bar-title {
-        font-weight: bold;
-        margin: 0 0 var(--space-3) var(--space-3);
-    }
-
-    .side-bar li {
-        list-style: none;
-        padding: var(--space-3);
-    }
-
-    .side-bar a {
-        text-decoration: none;
-        color: var(--gray-dark);
-    }
-
-    .side-bar .active-section {
-        border-left: 3px inset var(--purple-dark);
-        font-weight: bold;
-    }
-    
-    .btn {
-        width: 100%;
-        padding: var(--space-3);
-        background-color: var(--purple-dark);
-        color: white;
-        font-size: var(--space-3);
-        border: none;
-        border-radius: var(--border-radius-1);
-        margin-top: var(--space-3);
-
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .side-bar .fas {
-        color: var(--gray-dark);
-        margin-right: var(--space-3);
-    }
-
-    .fas.fa-plus {
-        color: white;
-        margin-right: var(--space-1);
     }
 
     .fa-bars {
         opacity: 0;
     }
 
-    .client {
-        display: flex;
-        align-items: center;
-    }
-
     [class^="avatar"] {
         display: block;
-
-        width: 50px;
-        height: 50px;
-        background-size: cover;
-        border-radius: 50%;
-        margin-right: var(--space-3);
-    }
-
-    .avatar-1 {
-        background-image: url(../images/avatars/avatar-1.jpeg);
-    }
-
-    .avatar-2 {
-        background-image: url(../images/avatars/avatar-2.jpeg);
-    }
-
-    .avatar-3 {
-        background-image: url(../images/avatars/avatar-3.jpeg);
-    }
-
-    .avatar-4 {
-        background-image: url(../images/avatars/avatar-4.jpeg);
-    }
-
-    .avatar-5 {
-        background-image: url(../images/avatars/avatar-5.jpeg);
-    }
-
-    .avatar-6 {
-        background-image: url(../images/avatars/avatar-6.jpeg);
-    }
-
-    .avatar-7 {
-        background-image: url(../images/avatars/avatar-7.jpeg);
-    }
-
-    .avatar-8 {
-        background-image: url(../images/avatars/avatar-8.jpeg);
     }
 }
-
 
 /* Desktop Styles */
 @media only screen and (min-width: 1350px) {
